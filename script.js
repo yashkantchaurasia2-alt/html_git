@@ -42,3 +42,9 @@
 //         clearInterval(value)
 //     }
 // },1000)
+
+console.log("first line")
+setTimeout(() => {
+    console.log("inside timeout")
+},0);
+console.log("last line")
