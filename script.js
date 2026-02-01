@@ -43,8 +43,67 @@
 //     }
 // },1000)
 
-console.log("first line")
-setTimeout(() => {
-    console.log("inside timeout")
-},0);
-console.log("last line")
+// console.log("first line")
+// setTimeout(() => {
+//     console.log("inside timeout")
+// },0);
+// console.log("last line")
+
+// console.log("starting homework")
+
+// setTimeout(() => {
+//     console.log("homework completed");
+//     console.log("dinner is ready");
+//     setTimeout(() => {
+//         console.log("dinner done");
+//         console.log("getting ready to go out");
+    
+//         setTimeout(() => {
+//            console.log("going out") 
+//         },1000);
+//     }, 1500);
+// }, 2000);
+
+// function finishhomework(callback){
+//     console.log("starting homework...");
+//     setTimeout(()=>{
+//         console.log("homework completed");
+//         callback();
+//     },2000);
+// }
+// function eatdinner(callback){
+//     console.log("dinner is ready")
+//     setTimeout(() => {
+//       console.log("dinner is done")  
+//     },1500);
+// }
+// function goOut(){
+//     console.log("getting to go out");
+// }
+// finishhomework(()=>{
+//     eatdinner(()=>{
+//         goOut();
+//     });
+// })
+
+// const p=new Promise((resolve, reject) => {
+//     console.log("I promise to do my homework by tomorrow.");
+//     setTimeout(() => {
+//         const didhomework=true;
+//         if(didhomework){
+//             resolve("i completed my homework and submitted it.")
+//         }
+//         else{
+//             reject("I forgot to do my homework.")
+//         }
+//     }, 2000);
+// })
+// console.log("waiting for the homework to finish...")
+// console.log(p);
+
+// p.then((a)=>{
+//     console.log(a);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
